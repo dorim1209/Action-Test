@@ -27,9 +27,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
-      - name: Test
-        run: ls -al
-
       - name: Install dependencies
         run: npm install
 
@@ -40,4 +37,4 @@ jobs:
         run: echo Test...
 
       - name: Deploy
-        run: npm run start
+        run: echo Deploy...
